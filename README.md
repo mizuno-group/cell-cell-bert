@@ -72,7 +72,7 @@ If you find this work useful for your research, please consider citing our paper
 ```
 @article{Yoshikawa2025CCBERT,
   title   = {Designing Cell–Cell Relation Extraction Models: A Systematic Evaluation of Entity Representation and Pre-training Strategies},
-  author  = {Yoshikawa, Mei and Mizuno, Tadahaya and Ohto, Yohei and Fujimoto, Hiromi and Kusuhara, Hiroyuki},
+  author  = {Yoshikawa Mei and Mizuno Tadahaya and Ohto Yohei and Fujimoto Hiromi and Kusuhara Hiroyuki},
   journal = {bioRxiv},
   year    = {2025},
   doi     = {10.64898/2025.12.01.691726},
