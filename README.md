@@ -21,6 +21,10 @@ This work presents the **first systematic evaluation of fundamental design choic
 
 This repository provides the datasets, models, and design principles established in our study.
 
+## Models
+
+**The pre-trained model weights are coming soon.** We plan to release the model weights via Hugging Face.
+
 ## Installation
 *(Code release coming soon)*
 

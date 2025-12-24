@@ -28,8 +28,8 @@ from sklearn.model_selection import train_test_split
 # Add the parent directory to sys.path to allow importing from 'src'
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from src.ccbert.trainer import run_training
-from src.ccbert.utils import (
+from src.cc_bert.trainer import run_training
+from src.cc_bert.utils import (
     apply_boundary_tags,
     normalize_boundary_tags,
     convert_boundary_to_replacement,
@@ -165,8 +165,8 @@ def main():
 
     # 3. Load Data
     # Expected structure: data_root/{dataset_name}/{seed}/train.csv
-    train_path = os.path.join(args.data_root, "semmed_raw", str(args.seed), "train.csv")
-    test_path  = os.path.join(args.data_root, "semmed_raw", str(args.seed), "test.csv")
+    train_path = os.path.join(args.data_root, "semmed", str(args.seed), "train.csv")
+    test_path  = os.path.join(args.data_root, "semmed", str(args.seed), "test.csv")
     pubmed_path = os.path.join(args.data_root, "pubmed", str(args.seed), "test.csv")
 
     df_train_full = pd.read_csv(train_path).head(args.size)
