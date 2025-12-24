@@ -1,9 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "ccbert"
+name = "cell-cell-bert"
 version = "0.1.0"
-description = "Official repository for the paper: Designing Cell–Cell Relation Extraction Models: A Systematic Evaluation of Entity Representation and Pre-training Strategies"
+description = "Source code for the paper: Designing Cell–Cell Relation Extraction Models: A Systematic Evaluation of Entity Representation and Pre-training Strategies"
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+　{ name = "Mei Yoshikawa", email = "lion.giraffe.may.2525[at]gmail.com" },
+  { name = "Tadahaya Mizuno", email = "tadahaya[at]gmail.com"},
+  { name = "Yohei Ohto" },
+  { name = "Hiromi Fujimoto" },
+  { name = "Hiroyuki Kusuhara" },
+]
+license = { file="LICENSE" }
+
 dependencies = [
     "accelerate>=1.12.0",
     "altair>=6.0.0",

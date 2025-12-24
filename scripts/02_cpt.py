@@ -34,7 +34,7 @@ from transformers import (
 # Adjust the path relative to the script location if necessary
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from src.ccbert.data_cpt import load_cpt_dataset
+from src.cc_bert.data_cpt import load_cpt_dataset
 
 def parse_args():
     """Parse command line arguments."""
