@@ -1,25 +1,21 @@
-# Designing Cell–Cell Relation Extraction Models: A Systematic Evaluation of Entity Representation and Pre-training Strategies
+# Defining and Evaluating Cell–Cell Relation Extraction from Biomedical Literature under Realistic Annotation Constraints
+
 This is the official repository for our paper:
 
-> **Designing Cell–Cell Relation Extraction Models: A Systematic Evaluation of Entity Representation and Pre-training Strategies**<br>
-> Mei Yoshikawa, Tadahaya Miuzuno†, Yohei Ohto, Hiromi Fujimoto, Hiroyuki Kusuhara<br>
-> *bioRxiv*, 2025.<br>
+> **Defining and Evaluating Cell–Cell Relation Extraction from Biomedical Literature under Realistic Annotation Constraints**  
+> Mei Yoshikawa, Tadahaya Mizuno†, Yohei Ohto, Hiromi Fujimoto, Hiroyuki Kusuhara  
+> *bioRxiv*, 2025.  
 > [[bioRxiv]](https://doi.org/10.64898/2025.12.01.691726)
 
-## Note
-This repository is under construction and will be officially released by [Mizuno group](https://github.com/mizuno-group).  
-Please contact tadahaya[at]gmail.com before publishing your paper using the contents of this repository.
-
+---
 ## Abstract
-Extracting cell–cell communication (CCC) from biomedical literature is critical for understanding intercellular interactions. While Large Language Models (LLMs) have advanced NLP, their generative nature raises reliability concerns for scientific fact extraction, highlighting the need for transparent, domain-adapted models.
+Extracting cell–cell relations from biomedical literature is essential for understanding intercellular communication in immunity, inflammation, and tissue biology. However, cell–cell relation extraction has not been established as a standalone biomedical relation extraction task, and no benchmark corpus or systematic evaluation framework currently exists. Fully manual corpus construction is costly and difficult to scale, limiting literature-based analyses of cell–cell communication.
 
-This work presents the **first systematic evaluation of fundamental design choices** for biomedical relation extraction (BioRE), focusing on CCC. Using a newly constructed dataset derived from SemMedDB and an independent PubMed test set, we report the following key findings:
+In this work, we define a sentence-level cell–cell relation extraction task and construct complementary manually annotated corpora under realistic annotation constraints. Rule-based literature mining is used solely as an **annotation accelerator** to identify candidate sentences, while all relation labels are assigned manually. In addition, an independently annotated PubMed corpus without rule-based filtering is constructed to evaluate robustness on naturally occurring sentence distributions. Using these resources, we systematically evaluate representative model configurations involving entity indication strategies, classification architectures, and continued pre-training.
 
-- **Systematic Analysis:** We evaluated core design decisions: entity indication strategies, model architectures, and the necessity of continued pre-training (CPT).
-- **Design Insights:** CPT substantially improved entity-aware architectures but had minimal effect on CLS-only models. Furthermore, "replacement" strategies generalized better to natural text than "boundary marking."
-- **Superior Performance:** Our best model achieved an out-of-distribution (OOD) accuracy of **0.757±0.009**, outperforming GPT-4o (0.715±0.012) while remaining lightweight and reproducible.
+Our results show that cell–cell relation extraction remains challenging under realistic conditions. While increasing training data size and combining entity-aware architectures with continued pre-training yield modest robustness improvements, performance on unfiltered PubMed sentences remains in the 70% accuracy range. Comparisons with general-purpose large language models further suggest that task complexity, rather than model class, is the primary limiting factor.
 
-This repository provides the datasets, models, and design principles established in our study.
+This repository provides the datasets, model implementations, and evaluation code used in our study, serving as a practical foundation for future work on literature-scale cell–cell relation extraction.
 
 ## Models
 
