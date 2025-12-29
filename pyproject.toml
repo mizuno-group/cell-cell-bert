@@ -5,15 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cell-cell-bert"
 version = "0.1.0"
-description = "Source code for the paper: Designing Cell–Cell Relation Extraction Models: A Systematic Evaluation of Entity Representation and Pre-training Strategies"
+description = "Source code for the paper: Defining and Evaluating Cell–Cell Relation Extraction from Biomedical Literature under Realistic Annotation Constraints"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
 　{ name = "Mei Yoshikawa", email = "lion.giraffe.may.2525[at]gmail.com" },
-  { name = "Tadahaya Mizuno", email = "tadahaya[at]gmail.com"},
-  { name = "Yohei Ohto" },
-  { name = "Hiromi Fujimoto" },
-  { name = "Hiroyuki Kusuhara" },
+  { name = "Tadahaya Mizuno", email = "tadahaya[at]gmail.com" },
 ]
 license = { file="LICENSE" }
 
