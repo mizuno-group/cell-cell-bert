@@ -18,8 +18,22 @@ Our results show that cell–cell relation extraction remains challenging under 
 This repository provides the datasets, model implementations, and evaluation code used in our study, serving as a practical foundation for future work on literature-scale cell–cell relation extraction.
 
 ## Models
+Pre-trained model weights are publicly available via Hugging Face.
 
-**The pre-trained model weights are coming soon.** We plan to release the model weights via Hugging Face.
+We release multiple trained models corresponding to different
+architectures.
+Each model is provided as an independent Hugging Face repository and
+organized as a collection.
+
+**Hugging Face Model Collection**: https://huggingface.co/collections/mizuno-group/cell-cell-bert
+
+Please refer to the model cards on Hugging Face for:
+- model configuration
+- intended usage
+- citation information
+
+This GitHub repository provides the datasets, training code,
+and evaluation pipeline used in the study.
 
 ## Installation
 *(Code release coming soon)*
